@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 25px;
+  /* font-family: sans-serif; */
+}
+
+/* Option */
+.option {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* Check */
+
+.check {
+  padding-left: 1.2em;
+}
+
+.check__input {
+  position: absolute;
+  appearance: none; /* -webkit-appearance: none;            -moz-appearance: none; */
+}
+
+.check__box {
+  position: absolute;
+  margin-left: -1.2em;
+  width: 25px;
+  /* width: 1.575em; */
+  /* height: 1.4em; */
+  height: 22px;
+  /* background-image: url(img/off.svg); */
+  background-image: url(heart.svg);
+}
+
+/* Checked */
+
+.check__input:checked + .check__box {
+  /* background-image: url(img/on.svg); */
+  background-image: url(heart_checked.svg);
+}
+
+/* Focused */
+/* .check__input:focus + .check__box {
+            background-image: url(img/off-focused.svg);
+        }
+
+        .check__input:checked:focus + .check__box {
+            background-image: url(img/on-focused.svg);
+        } */
+
+/* Disabled */
+/* .check__input:disabled + .check__box {
+            background-image: url(img/off-disabled.svg);
+        }
+
+        .check__input:checked:disabled + .check__box {
+            background-image: url(img/on-disabled.svg);
+        } */
+
+/* ============== my */
+:root {
+  --var-body-bg: #fff;
+  --var-body-fc: #333;
+  --var-header-bg: #eee;
+}
+
+[dark] {
+  --var-body-bg: #333;
+  --var-body-fc: #fff;
+  --var-header-bg: #666;
+}
+
+body {
+  background-color: var(--var-body-bg);
+  color: var(--var-body-fc);
+
+  user-select: none;
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+
+  background-color: var(--var-header-bg);
+}
+
+hr {
+  color: var(--var-header-bg);
+}
+
+input {
+  position: absolute;
+  appearance: none;
+}
